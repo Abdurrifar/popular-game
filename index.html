@@ -8,24 +8,201 @@
     <link rel="shortcut icon" href="Images/10.png" type="image/x-icon">
     <!-- tailwind daisy Ui link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <!-- monrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- awesome icon  -->
+<script src="https://kit.fontawesome.com/8ff4aee32f.js" crossorigin="anonymous"></script>
     <!-- custom color in tailwind -->
-<script src="https://cdn.tailwindcss.com"></script
-    <!-- tailwind custom color -->
+<script src="https://cdn.tailwindcss.com"></script>
+  
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-color': '#FF4240',
+               
               }
             }
           }
         }
     </script>
+    <style>
+      .font-primary{
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
 </head>
-<body>
-    <header class="container :mx-auto"></header>
-    <main class="container :mx-auto"></main>
+
+
+
+
+<body class="font-primary">
+  <!-- start header *********************************************************************-->
+    <header class="container mx-auto">
+
+ <!-- start nav******************* -->
+      <nav class=" mr-6 ml-0 lg:mx-4">
+        <div class="navbar ">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class=" text-sm fotn-normal menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 mx-10">
+
+
+                <li class="text-primary-color"><a>Home</a></li>              
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="text-2xl lg:text-4xl font-extrabold text-[#131318]">Hockey <span class="text-primary-color" > ’</span>s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 mx-10">
+
+              <li class="text-primary-color"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end ">
+            <i class="mr-4 hidden lg:block fa-solid fa-magnifying-glass"></i>
+            <a class="btn bg-primary-color text-[#FFF] font-bold rounded-lg ">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+      <!-- end nav******************************************************* -->
+
+      <!--header bannar start -->
+      <section>
+        <div class=" my-8 lg:relative carousel w-full ">
+
+          <!-- first slide -->
+          <div id="slide1" class="carousel-item relative  lg:w-full">
+            <img src="Images/1.png" class="w-[339px] mx-2 lg:w-full rounded-xl" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+           <!-- two slide -->
+          <div id="slide2" class="carousel-item relative w-full rounded-xl">
+            <img src="Images/4.png" class="w-[339px] mx-2 lg:w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+           <!-- three slide -->
+          <div id="slide3" class="carousel-item relative w-full rounded-xl">
+            <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-[339px] mx-2 lg:w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+           <!-- four slide -->
+          <div id="slide4" class="carousel-item relative w-full rounded-xl">
+            <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-[339px] mx-2 lg:w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+
+<!-- badge -->
+        <div class="bg-black p-6 mx-2 lg:p-8 rounded-lg w-[340px] lg:w-[580px] lg:absolute right-20 bottom-2">
+          <h4 class="text-xl font-extrabold text-[#ffffff]">Meet all the heroes from the field</h4>
+          <p class="text-sm font-medium text-gray-500"> You can see the  most of  popular player in hocky in world.They are stronger and they khow the best way to the target</p>
+        </div>
+
+      </section>
+      <!--header bannar end -->
+    </header>
+
+
+
+
+
+
+
+
+
+    <main class="container mx-auto">
+
+
+
+     <section class="    lg:max-w-6xl mx-auto my-10" >
+      <div class="my-20 text-center">
+        <h2 class="text-3xl font-extrabold">Professional Hockeys Club</h2>
+        <p class="font-medium text-sm">Now we provide the best quality for hocky plaeyrs.Those ar facalty, Experienced coach, senior player and training ground</p>
+      </div>
+      <div class="flex flex-col lg:flex-row lg:justify-between gap-2">
+<!-- one -->
+        <div class=" p-5 relative text-center items-center  space-y-7 w-[240px]">
+          <div>
+            <img src="Images/Group 9 (1).svg" class="w-20 absolute left-20 -top-2 " alt="">
+            <p class="text-2xl font-extrabold">87%</p>
+          
+          
+          <!-- two -->
+          </div>
+          <h5 class="text-xl font-semibold">Prayer Facility</h5>
+          <p class="text-sm font-light">Our facalty is bigger than any other club.So it has a massive place to practice & play</p>
+        </div>
+        <div class=" p-5 relative text-center items-center  space-y-7 w-[240px]">
+          <div>
+            <img src="Images/Group 9 (2).svg" class="w-20 absolute left-20 -top-2 " alt="">
+            <p class="text-2xl font-extrabold">85%</p>
+          
+          
+          <!-- three -->
+          </div>
+          <h5 class="text-xl font-semibold">Prayer Facility</h5>
+          <p class="text-sm font-light">Our facalty is bigger than any other club.So it has a massive place to practice & play</p>
+        </div>
+        <div class=" p-5 relative text-center items-center  space-y-7 w-[240px]">
+          <div>
+            <img src="Images/Group 9 (3).svg" class="w-20 absolute left-20 -top-2 " alt="">
+            <p class="text-2xl font-extrabold">80%</p>
+          
+          
+          
+          </div>
+          <h5 class="text-xl font-semibold">Prayer Facility</h5>
+          <p class="text-sm font-light">Our facalty is bigger than any other club.So it has a massive place to practice & play</p>
+        </div>
+        <div class=" p-5 relative text-center items-center  space-y-7 w-[240px]">
+          <div>
+            <img src="Images/Group 9 (4).svg" class="w-20 absolute left-20 -top-2 " alt="">
+            <p class="text-2xl font-extrabold">90%</p>
+          
+          
+          
+          </div>
+          <h5 class="text-xl font-semibold">Prayer Facility</h5>
+          <p class="text-sm font-light">Our facalty is bigger than any other club.So it has a massive place to practice & play</p>
+        </div>
+     
+
+        </div>  
+     </section>
+
+
+
+
+    </main>
     <footer></footer>
 </body>
 </html>
